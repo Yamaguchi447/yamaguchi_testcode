@@ -48,7 +48,7 @@ def objective_value_pca(sampled_points, objective_values, ax, color="blue"):
     # 中心点をプロット
     mean_point = sampled_points.mean(axis=0)
     
-    # PCAの結果に基づいて、目的関数値の分散方向を描画
+    # 矢印
     scale = 1  # 矢印のスケール
     ax.arrow(mean_point[0], mean_point[1], first_pc[0] * scale, first_pc[1] * scale,
              head_width=0.05, head_length=0.1, fc=color, ec=color)
